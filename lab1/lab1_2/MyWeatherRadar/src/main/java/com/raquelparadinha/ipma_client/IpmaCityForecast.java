@@ -1,4 +1,4 @@
-package main.java.com.raquelparadinha.ipma_client;
+package com.raquelparadinha.ipma_client;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

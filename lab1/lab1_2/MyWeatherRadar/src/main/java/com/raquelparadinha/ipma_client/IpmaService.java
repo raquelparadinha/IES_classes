@@ -1,4 +1,4 @@
-package main.java.com.raquelparadinha.ipma_client;
+package com.raquelparadinha.ipma_client;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
