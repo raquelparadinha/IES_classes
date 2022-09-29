@@ -53,7 +53,7 @@
       <groupId>com.squareup.retrofit2</groupId>
       <artifactId>converter-gson</artifactId>
       <version>2.3.0</version>
-    </dependency> 
+    </dependency>
   </dependencies>
 
   <build>
