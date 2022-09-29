@@ -54,6 +54,7 @@
       <artifactId>converter-gson</artifactId>
       <version>2.3.0</version>
     </dependency>
+<<<<<<< HEAD
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-api</artifactId>
@@ -64,6 +65,8 @@
       <artifactId>log4j-core</artifactId>
       <version>2.16.0</version>
     </dependency>
+=======
+>>>>>>> fc5e46d935a5549be5c1ca0e472ad68b5b343e45
   </dependencies>
 
   <build>
