@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="EmbeddedJettyExample:war">
+    <output-path>$PROJECT_DIR$/EmbeddedJettyExample/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>EmbeddedJettyExample</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="EmbeddedJettyExample-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="EmbeddedJettyExample:war exploded" />
+    </root>
+  </artifact>
+</component>
