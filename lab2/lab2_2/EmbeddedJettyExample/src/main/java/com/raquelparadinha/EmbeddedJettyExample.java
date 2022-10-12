@@ -1,4 +1,4 @@
-package com.javacodegeeks.example;
+package com.raquelparadinha;
 
 import java.io.IOException;
 
@@ -34,7 +34,11 @@ public class EmbeddedJettyExample {
         {
             response.setContentType("text/html");
             response.setStatus(HttpServletResponse.SC_OK);
-            response.getWriter().println("<h1>New Hello Simple Servlet</h1>");
+            String username = request.getParameter("username");
+            if (username == null)
+                response.getWriter().println("<h1>New Hello Simple Servlet</h1>");
+            else
+                response.getWriter().println("<h1>New Hello Simple Servlet. Welcome, " + username + "!</h1>");
         }
     }
 }
