@@ -47,12 +47,23 @@ Spring Boot has controllers to handle requests and creates models with the desir
 
 C. Inspect the POM.xml for the previous Spring Boot projects. What is the role of the “starters” dependencies?
 
+Before Spring Boot was introduced, Spring Developers used to spend a lot of time on Dependency management. Spring Boot Starters were introduced to solve this problem so that the developers can spend more time on actual code than Dependencies. Spring Boot Starters are dependency descriptors that can be added under the **<dependencies>** section in pom.xml. There are around 50+ Spring Boot Starters for different Spring and related technologies. 
 
-
-Os Spring Boot starters resolvem o problema de gerenciamento de dependências em um projeto complexo. Os starter POMs são um conjunto de descritores de dependência convenientes que podem ser incluídos no aplicativo, com eles, obtemos todo o Spring, sem ter que procurar por códigos de amostra e copiar e colar os descritores de dependência.
+from: https://www.geeksforgeeks.org/spring-boot-starters/
 
 D. Which annotations are transitively included in the @SpringBootApplication?
 
-
+- @EnableAutoConfiguration: activates Spring Boot's automatic configuration mecanism
+- @ComponentScan: activates the @Component on the package where the app is located
+- @Configuration: allows to register extra beans in the context or to import aditional configuration classes
 
 E. Search online for the topic “Best practices for REST API design”. From what you could learn, select your “top 5” practices, and briefly explain them in you own words.
+
+1. REST API MUST ACCEPT AND RESPOND WITH JSON: It is a common practice that APIs should accept JSON requests as the payload and also send responses back. 
+2. GO WITH ERROR STATUS CODES: Over 100 status codes have already been built by HTTP. It is a boon for developers to use status codes in their REST API design.
+3. DON’T USE VERBS IN URLS: If you understood the APIs' basics, you would know that inserting verbs in the URL isn’t a good idea. The reason behind this is that HTTP has to be self-sufficient to describe the purpose of the action. 
+4. WELL COMPILED DOCUMENTATION:Documentation is one of the important but highly ignored aspects of a REST API structure. The documentation is the first point in the hands of customers to understand the product and critical deciding factor whether to use it or not. One good documentation is neatly presented in a proper flow to make an API development process quicker.
+5. RETURN ERROR DETAILS IN THE RESPONSE BODY: It is convenient for the API endpoint to return error details in the JSON or response body to help a user with debugging. If you can explicitly include the affected field in error, this will be special kudos to you.
+
+from: https://www.partech.nl/nl/publicaties/2020/07/9-trending-best-practices-for-rest-api-development#
+
