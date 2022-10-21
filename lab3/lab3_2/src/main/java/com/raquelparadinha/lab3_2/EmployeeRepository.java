@@ -5,7 +5,9 @@ import org.springframework.stereotype.Repository;
 
 import com.raquelparadinha.lab3_2.Employee;
 
+import java.util.List;
+
 @Repository
 public interface EmployeeRepository extends JpaRepository<Employee, Long>{
-
+    List<Employee> findByEmailId(String emailId);
 }
