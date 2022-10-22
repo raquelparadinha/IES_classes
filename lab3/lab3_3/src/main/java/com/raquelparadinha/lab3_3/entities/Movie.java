@@ -6,7 +6,9 @@ import javax.persistence.*;
 @Table(name = "movies_table")
 public class Movie {
 
-    private long id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private int id;
     private String title;
     private int year;
 
@@ -16,13 +18,11 @@ public class Movie {
         this.year = year;
     }
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

@@ -40,4 +40,14 @@ Os dados são guardados através da dependência h2database, que é uma "in-memo
 
 A regra de "not empty" é definida na declaração do atributo email da classe User através da anotação @NotBlank.
 
- 
+### 3_2 
+
+![image-20221021173804653](/home/raquel/.config/Typora/typora-user-images/image-20221021173804653.png)
+
+![image-20221021173851759](/home/raquel/.config/Typora/typora-user-images/image-20221021173851759.png)
+
+![image-20221021174716519](/home/raquel/.config/Typora/typora-user-images/image-20221021174716519.png)
+
+![image-20221021175116301](/home/raquel/.config/Typora/typora-user-images/image-20221021175116301.png)
+
+![image-20221021175057681](/home/raquel/.config/Typora/typora-user-images/image-20221021175057681.png)
