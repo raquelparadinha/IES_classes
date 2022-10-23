@@ -4,15 +4,17 @@ import com.raquelparadinha.lab3_3.entities.Movie;
 import com.raquelparadinha.lab3_3.entities.Quote;
 import com.raquelparadinha.lab3_3.services.MovieService;
 import com.raquelparadinha.lab3_3.services.QuoteService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Random;
 
 @RestController
-@RequestMapping("/api")
 public class Controller {
+    @Autowired
     private MovieService movieService;
+    @Autowired
     private QuoteService quoteService;
 
     @GetMapping("/movies")

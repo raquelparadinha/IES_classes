@@ -11,8 +11,6 @@ public class Quote {
     private int id;
     private String quote;
 
-
-
     public Quote() {}
     public Quote(String quote, Movie movie) {
         this.quote = quote;
